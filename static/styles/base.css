@@ -1,0 +1,53 @@
+/* Убираем стандартные отступы браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной шрифт */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+
+.header {
+    position: fixed;       /* Делает хедер фиксированным */
+    top: 0;                /* Приклеивает к верху */
+    left: 0;
+    width: 100%;           /* На всю ширину */
+    
+    display: flex;         /* Включаем flex */
+    justify-content: space-between;  /* Лого слева, кнопки справа */
+    align-items: center;   /* Выравнивание по вертикали */
+    
+    padding: 20px 40px;
+    
+    background-color: #111;
+    color: white;
+
+    /* z-index: 1000;         Чтобы был поверх всего */
+
+}
+
+/* Кнопки навигации */
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Эффект при наведении */
+.nav a:hover {
+    color: orange;
+}
+
+/* ===== CONTENT ===== */
+
+.content {
+    margin-top: 100px;  /* Чтобы контент не прятался под фиксированным хедером */
+    padding: 40px;
+    position: relative;
+}
