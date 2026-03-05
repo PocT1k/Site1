@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://db.onlinewebfonts.com/c/e7add10b4df03aa3a185e193221d8900?family=Kairos+Sans+W06+Cond+Medium');
+
+:root {
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-jetbrains-mono: 'JetBrains Mono', monospace;
+    --font-kairos-sans: 'KairosSansW06-CondMedium', sans-serif;
+}
+
+html {
+    H0 {
+        ont-size: 104px;
+        line-height: 100%;
+        font-family: var(--font-kairos-sans);
+        font-weight: regular;
+    }
+
+    H1 {
+        font-size: 64px;
+        line-height: 100%;
+        font-family: var(--font-kairos-sans);
+        font-weight: regular;
+    }
+}
+
+/* .heading/H1(Mob) {
+    font-size: 56px;
+    line-height: 100%;
+    font-family: "KairosSansW06-CondMedium";
+    font-weight: regular;
+} */
+
+.heading/H2 {
+    font-size: 36px;
+    line-height: 110%;
+    font-family: "KairosSansW06-CondMedium";
+    font-weight: regular;
+}
+
+.heading/H3 {
+    font-size: 32px;
+    line-height: 115%;
+    font-family: "JetBrains Mono";
+    font-weight: regular;
+}
+
+.heading/H4 {
+    font-size: 28px;
+    line-height: 125%;
+    font-family: "Open Sans";
+    font-weight: regular;
+}
+
+.subtitle/S1 {
+    font-size: 24px;
+    line-height: 130%;
+    font-family: "Open Sans";
+    font-weight: regular;
+}
+
+.subtitle/S2 {
+    font-size: 24px;
+    line-height: 130%;
+    font-family: "JetBrains Mono";
+    font-weight: regular;
+}
+
+.subtitle/S3 {
+    font-size: 24px;
+    line-height: 130%;
+    font-family: "JetBrains Mono";
+    font-weight: regular;
+}
+
+.body/B1 {
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "Open Sans";
+    font-weight: regular;
+}
+
+.body/B2 {
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "JetBrains Mono";
+    font-weight: regular;
+}
+
+.caption/C1 {
+    font-size: 16px;
+    line-height: 145%;
+    font-family: "Open Sans";
+    font-weight: regular;
+}
+
+.caption/C2 {
+    font-size: 16px;
+    line-height: 145%;
+    font-family: "JetBrains Mono";
+    font-weight: regular;
+}
+
+/* .caption/C2(Code) {
+    font-size: 16px;
+    line-height: 160%;
+    font-family: "JetBrains Mono";
+    font-weight: regular;
+} */
+
+.footnote/F1 {
+    font-size: 14px;
+    line-height: 140%;
+    font-family: "Open Sans";
+    font-weight: regular;
+}
+
+.footnote/F2 {
+    font-size: 14px;
+    line-height: 140%;
+    font-family: "JetBrains Mono";
+    font-weight: regular;
+}

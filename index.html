@@ -1,40 +1,69 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script src="javascripts/jquery.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Верхнее меню -->
     <header>
-        <a class="header-left"></a>
+      <a class="header-left"></a>
 
-        <div class="header-middle">
-            <nav>
-                <a href="#">Учебник</a>
-                <a href="#">Галерея</a>
-                <a href="#">О проекте</a>
-            </nav>
-            <input type="search" placeholder="Тайлинг на p5.js" />
-        </div>
+      <div class="header-middle">
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+        <nav>
+          <a href="#">Учебник</a>
+          <a href="#">Галерея</a>
+          <a href="#">О проекте</a>
+        </nav>
+        <input type="search" placeholder="Тайлинг на p5.js" />
+        <a class="Q_SearchIcon"></a>
+      </div>
 
-        <div class="header-right">
-            <p>[</p>
-            <a href="#">Туториал</a>
-            <p>/</p>
-            <a href="#">Работа</a>
-            <p>]</p>
-        </div>
+      <div class="header-right">
+        <p>[</p>
+        <a href="#">Туториал</a>
+        <p>/</p>
+        <a href="#">Работа</a>
+        <p>]</p>
+      </div>
     </header>
 
+    <!-- Зеленая зона -->
     <main>
-        <section class="main-first">
-        </section>
+      <section class="main-first"></section>
     </main>
-</body>
 
+    <!-- Поле для отправки почты -->
+    <input type="email" placeholder="Ваш e-mail" />
+    <button class="submit" disabled>Подписаться</button>
+
+    <!-- Кнопки -->
+    <div id="section-4">
+      <div class="buttonContainer">
+        <a class="secondary" href="">Секондари</a>
+        <a class="primary" href="">Праймери</a>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Открытие бургер-меню
+    function toggleMenu() {
+      const div = document.querySelector(".header-middle");
+      div.classList.toggle("open");
+    }
+
+    // Смена цвета текста в форме для почты
+    const input = document.querySelector(".subscribe input");
+    const button = document.querySelector(".subscribe button");
+
+    input.addEventListener("input", () => {
+      button.disabled = input.value.trim() === "";
+    });
+  </script>
 </html>
